@@ -1,0 +1,13 @@
+TITLE: 30% Ruling (Expat Tax Scheme) - Who Qualifies
+SOURCE_URL: https://www.iamsterdam.com/en/live-work-study/living/official-procedures/30-tax-ruling
+SOURCE_URL_2: https://business.gov.nl/staff/employing-staff/the-expat-scheme-30-percent-ruling-in-the-netherlands/
+
+The 30% ruling, officially called the expat scheme, is a Dutch tax facility that lets an employer pay a portion of an eligible employee's gross salary as a tax-free allowance, meant to offset the extra costs of relocating for work (housing, travel, and similar expenses). As of 2026, the maximum tax-free share is still 30% of salary, but from 1 January 2027 this is scheduled to drop to 27% for the remaining duration of any active ruling.
+
+To qualify, an employee generally needs to meet several conditions together: be recruited from abroad or transferred within a multinational company, have lived more than 150 kilometres (straight-line distance) from the Dutch border for at least 16 of the 24 months before their first Dutch working day, work under an employment contract with a Dutch payroll-registered employer, and meet a minimum taxable salary threshold. For 2026, that threshold is €48,013 per year (after the 30% deduction is applied), or a reduced €36,497 for employees under 30 who hold a qualifying master's degree. Scientific researchers at designated institutions and doctors training as specialists are exempt from the salary threshold entirely.
+
+The 150km rule is enforced strictly and is one of the most common reasons applications get rejected - it effectively excludes people who were already living close to the Dutch border, including many residents of Belgium and parts of Germany, in the recent past.
+
+Self-employed people and freelancers cannot use the 30% ruling directly, since it requires an employer to apply on the employee's behalf - a freelancer would need to set up a company and become that company's employee to be eligible.
+
+The ruling can last up to five years from the first working day, and the eligible salary itself is capped: as of 1 January 2026, only salary up to €262,000 per year counts toward the tax-free calculation, in line with the Dutch Standard for Remuneration Act.

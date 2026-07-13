@@ -1,0 +1,9 @@
+TITLE: What the BSN Is Used For, and Where to Find an Existing One
+SOURCE_URL: https://www.netherlandsworldwide.nl/bsn/where-to-find
+SOURCE_URL_2: https://wise.com/us/blog/bsn-number-netherlands
+
+The BSN (burgerservicenummer) is a unique personal identifier tied to a person's records across Dutch government bodies, employers, banks, and healthcare providers. It's used for tax filing, salary payment, health insurance registration, and opening a bank account, among other things - without it, most of this simply cannot happen.
+
+People who have previously lived, worked, or studied in the Netherlands may already have a BSN even if they don't remember it. It's commonly printed on a Dutch passport, ID card, or driving licence, and it also appears on payslips, annual salary statements, and health insurance cards. It can also be looked up digitally through MijnOverheid after logging in with DigiD, under the "Identiteit" section.
+
+A BSN is only ever issued once per person - even someone who leaves the Netherlands and later returns keeps the same number rather than being issued a new one. Because the BSN is sensitive personal data, general advice is to share it only with organisations that have a legitimate need for it (such as employers, healthcare providers, and financial institutions), not casually.

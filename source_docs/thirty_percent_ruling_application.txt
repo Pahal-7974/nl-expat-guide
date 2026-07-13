@@ -1,0 +1,11 @@
+TITLE: 30% Ruling - How the Application Works
+SOURCE_URL: https://octagonpeople.com/30-percent-ruling-netherlands-complete-guide/
+SOURCE_URL_2: https://business.gov.nl/staff/employing-staff/the-expat-scheme-30-percent-ruling-in-the-netherlands/
+
+Unlike most tax matters, the individual employee does not apply for the 30% ruling alone - it's a joint application submitted together by the employer and employee to the Belastingdienst (the Dutch Tax and Customs Administration). The employer needs to be registered for Dutch payroll tax, and the request should ideally be filed within four months of the employee's first working day; if it's submitted within that window and approved, the benefit can be applied retroactively back to the start date.
+
+The application package typically needs to include a signed employment contract, valid identification, proof of the employee's address abroad before moving (such as a rental agreement or utility bills), and - for anyone relying on the reduced under-30 salary threshold - proof of the relevant master's degree. The employer separately provides company details, a wage tax number, and a written statement explaining why no suitable candidate was available locally, since the scheme is meant for genuinely scarce expertise.
+
+Processing typically takes around eight weeks. If approved, the Belastingdienst issues a formal decision (beschikking) confirming the start and end dates of the ruling; from that point, the tax-free portion is simply applied automatically to each payslip for the remaining duration.
+
+If someone changes employers while the ruling is active, it does not automatically transfer - the new employer has to reapply, though the original five-year clock continues rather than resetting. If the employee's salary at any point drops below the applicable minimum threshold, the tax-free allowance must be reduced so that the remaining taxable salary still satisfies the income requirement.

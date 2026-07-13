@@ -1,0 +1,11 @@
+TITLE: How to Register for a BSN (Citizen Service Number)
+SOURCE_URL: https://www.netherlandsworldwide.nl/bsn/how-to-get
+SOURCE_URL_2: https://living-in-holland.nl/expat-information/how-to-get-bsn-number-netherlands/
+
+Anyone who registers as a resident in the Netherlands' Personal Records Database (Basisregistratie Personen, or BRP) is automatically issued a citizen service number, the BSN. In practice, how someone gets a BSN depends on how long they plan to stay.
+
+If the stay will be longer than four months, registration happens at the local municipality (gemeente), and this is legally required within five days of arrival. The address used for registration becomes the person's official Dutch home address, and the accommodation has to be legitimate housing (a hotel or short-term Airbnb generally doesn't qualify) - the landlord or owner typically needs to confirm the tenancy in writing. The typical steps are: book an appointment with the municipality (often labeled "inschrijven vanuit het buitenland" or similar), bring the required documents (valid passport or ID, proof of address such as a rental contract, and a residence permit or IND proof if applicable), attend the appointment where an official verifies identity and address, and then receive the BSN - usually on the spot or within a few days by post.
+
+If the stay will be shorter than four months, or the person lives abroad but still needs a BSN (for example for short-term work), they instead register with the Non-residents Records Database (RNI) at one of a limited number of designated RNI desks, rather than at a regular municipality.
+
+Without a BSN, day-to-day administrative life in the Netherlands is effectively blocked: employers cannot run payroll correctly, banks generally won't open an account, and healthcare registration is not possible.
