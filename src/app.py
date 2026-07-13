@@ -1,7 +1,14 @@
-import streamlit as st
-from rag import RagPipeline
+import os
+   import streamlit as st
+   from rag import RagPipeline
 
-st.set_page_config(page_title="NL Expat Guide", page_icon="🇳🇱")
+   st.set_page_config(page_title="NL Expat Guide", page_icon="🇳🇱")
+
+   INDEX_PATH = os.path.join(os.path.dirname(__file__), "..", "index", "faiss.index")
+   if not os.path.exists(INDEX_PATH):
+       with st.spinner("First run: building the search index from source documents..."):
+           from ingest import build_index
+           build_index()
 
 st.title("🇳🇱 NL Expat Guide")
 st.caption(
