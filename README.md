@@ -15,7 +15,7 @@ official guidance.
 
 ```
 User                                                                          
-question ──▶ embed (MiniLM) ──▶ FAISS similarity search ──▶ top-k chunks <- Vector Database <- Source Documents
+question ──▶ embed (MiniLM) ──▶ FAISS similarity search ──▶ top-k chunks  ◀-- Source Documents
                                                                   │
                                                                   ▼
                                               LLM (Groq, context-only prompt)
