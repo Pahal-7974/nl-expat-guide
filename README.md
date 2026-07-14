@@ -14,7 +14,8 @@ official guidance.
 ## How it works
 
 ```
-question ──▶ embed (MiniLM) ──▶ FAISS similarity search ──▶ top-k chunks
+User                                                                          
+question ──▶ embed (MiniLM) ──▶ FAISS similarity search ──▶ top-k chunks <- Vector Database <- Source Documents
                                                                   │
                                                                   ▼
                                               LLM (Groq, context-only prompt)
