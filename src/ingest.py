@@ -27,8 +27,8 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # small, fast, free, runs locally (no API 
 # Tradeoff: smaller chunks -> more precise retrieval but less surrounding context.
 # Larger chunks -> more context per chunk but retrieval gets noisier (a chunk
 # might only be partially relevant to the query).
-CHUNK_SIZE_WORDS = 175
-CHUNK_OVERLAP_WORDS = 25
+CHUNK_SIZE_WORDS = 350
+CHUNK_OVERLAP_WORDS = 50
 
 
 def parse_doc(filepath):
