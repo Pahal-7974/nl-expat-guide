@@ -1,0 +1,9 @@
+TITLE: Opening a Dutch Bank Account - BSN and No-BSN Options
+SOURCE_URL: https://www.abnamro.nl/en/personal/specially-for/expats/welcome-to-the-netherlands/open-bank-account.html
+SOURCE_URL_2: https://dutchreview.com/financial/dutch-bank-accounts-without-a-bsn/
+
+Most traditional Dutch banks (ING, ABN AMRO, Rabobank) will let a new arrival start opening an account before their BSN comes through, but they all require the BSN to be provided within a set grace period after the account opens - commonly around 90 days, though the exact window varies by bank. This exists specifically to solve a common catch: getting a BSN requires municipal registration, which in some cases effectively requires a Dutch address, while some landlords or employers expect a functioning Dutch bank account fairly early. In practice, most people can open an account with just a valid passport or ID (an international or EU passport, or a Dutch residence permit for non-EU nationals) and, once available, proof of a Dutch address.
+
+Digital-first banks or e-money providers such as bunq, N26, and Wise go further and don't require a BSN at all to open an account, and some don't require a Dutch address either - making them a common choice for the first few weeks before a full Dutch bank account is set up. A relevant technical detail: some of these providers issue a Dutch IBAN (starting with NL) while others (like N26) issue a German IBAN - a small number of Dutch employers, landlords, and insurers still expect an NL-prefixed IBAN in practice, even though EU rules formally prohibit discriminating against foreign IBANs.
+
+Typical account opening, once a BSN and Dutch address are available, is quick: applying online through a bank's app, submitting an ID photo and personal details, and receiving account access within minutes to a few hours. Applying in person at a branch, or applying without a BSN yet, generally takes longer and may require an appointment.
