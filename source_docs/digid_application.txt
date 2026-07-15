@@ -1,0 +1,11 @@
+TITLE: What DigiD Is and How to Apply
+SOURCE_URL: https://www.digid.nl/en/apply-and-activate/apply-digid
+SOURCE_URL_2: https://www.iamexpat.nl/expat-info/official-issues/digid-netherlands
+
+DigiD (Digital Identification) is the Netherlands' system for proving your identity online when dealing with government and government-linked organisations - effectively a digital replacement for showing a passport at a counter. It's used for filing taxes, applying for benefits and allowances, checking pension information, and interacting with hundreds of organisations including the IND and the Belastingdienst. A DigiD account is personal and tied to your BSN; it consists of a username, password, and (recommended, and often required by individual services) two-factor verification via SMS or the DigiD app.
+
+To apply, someone needs to already have a BSN and be registered at a Dutch address in the BRP (the personal records database), plus a mobile phone that can receive SMS and an email address. The application itself is done online at digid.nl: fill in personal details (BSN, date of birth, postal code), choose security settings, and create a username and password. After submitting the online application, an activation letter containing a code is posted to the applicant's registered BRP address - this typically takes a few working days, and the specific window (often cited as 3 to 5 working days) depends on regional mail delivery. The activation code generally needs to be used within a limited window after being issued, so it shouldn't be left unused for long once it arrives.
+
+People who are not yet living in the Netherlands, or who live abroad while still needing a DigiD (for example while their move is being processed), follow a different route: they apply online but then collect their activation code either at a physical DigiD service desk in the Netherlands or via a video call arranged through Netherlands Worldwide, rather than by post.
+
+DigiD credentials are strictly personal and should never be shared - not with employers, not with accountants helping with a tax return. Where someone else needs to act on a person's behalf (for instance, an accountant filing taxes), the correct approach is a formal DigiD authorisation ("DigiD Machtigen"), not sharing login details directly.
