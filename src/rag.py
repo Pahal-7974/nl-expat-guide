@@ -18,7 +18,7 @@ from groq import Groq
 
 INDEX_DIR = os.path.join(os.path.dirname(__file__), "..", "index")
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
-TOP_K = 3  # how many chunks to retrieve per question
+TOP_K = 2  # how many chunks to retrieve per question
 
 SYSTEM_PROMPT = """You are an assistant that helps people understand the basics of \
 immigrating to and settling in the Netherlands. You must answer ONLY using the \
