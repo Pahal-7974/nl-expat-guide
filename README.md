@@ -12,19 +12,7 @@ can make that information easier to navigate — without pretending to replace
 official guidance.
 
 ## How it works
-
-```
-User                                                                          
-question ──▶ embed (MiniLM) ──▶ FAISS similarity search ──▶ top 4 chunks  ◀-- Vector Database (6 vectors, 384 chunks) <- Source Documents
-                                                                  │
-                                                                  ▼
-                                              LLM (Groq, context-only prompt)
-                                                                  │
-                                                                  ▼
-                                              answer + source links + IND/
-                                              Belastingdienst reminder
-```
-
+<img width="946" height="727" alt="image" src="https://github.com/user-attachments/assets/aecaa823-9b58-4089-b957-2a7400966a1c" />
 1. **Source curation** (`source_docs/`): a small set of manually written,
    paraphrased summaries of official/reputable pages (IND, business.gov.nl,
    I amsterdam, NetherlandsWorldwide), each tagged with its source URL.
