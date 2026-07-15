@@ -1,0 +1,9 @@
+TITLE: Applying for DigiD From Outside the Netherlands
+SOURCE_URL: https://www.netherlandsworldwide.nl/digid-abroad/how-to-apply
+SOURCE_URL_2: https://www.denhaag.nl/en/moving-and-immigration/apply-for-a-digid-if-you-live-abroad/
+
+Someone who lives outside the Netherlands but already holds a Dutch BSN (for example because they're in the process of moving, or are registered in the Non-Residents Records Database, RNI) can still apply for a DigiD before physically arriving. The process differs from the standard domestic route because there's no Dutch postal address to send an activation letter to.
+
+After completing the online application, the applicant receives a "collection code" - a 9-digit code starting with the letter B - sent by both text message and email. This collection code is valid for 30 days and is not itself the activation code; it's what's needed to retrieve the actual activation code in a second step. To get the activation code, the applicant either visits a physical DigiD service desk in the Netherlands in person (appointment required, and this cannot be done by an authorised representative on someone else's behalf) or completes a video call arranged through Netherlands Worldwide, the Ministry of Foreign Affairs' service for Dutch citizens abroad. During the video call or in-person appointment, a valid passport or national identity card is required for verification - a driving licence is explicitly not accepted as valid ID for this purpose.
+
+If the collection code expires before it's used, the only option is to restart the application from the beginning to receive a new one. Separately, a DigiD that goes unused for three years or more automatically expires, at which point a fresh application at a service desk (not simply reactivation) is required, regardless of whether the person still remembers their original username and password.
