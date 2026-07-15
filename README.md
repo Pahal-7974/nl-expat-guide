@@ -12,7 +12,7 @@ can make that information easier to navigate — without pretending to replace
 official guidance.
 
 ## How it works
-<img width="802" height="648" alt="image" src="https://github.com/user-attachments/assets/c0702b1d-58ed-44eb-a3ac-af63b3a670e4" />
+<img width="773" height="755" alt="image" src="https://github.com/user-attachments/assets/53daa194-354e-415c-9c09-3fb179dc63d2" />
 
 1. **Source curation** (`source_docs/`): a small set of manually written,
    paraphrased summaries of official/reputable pages (IND, business.gov.nl,
