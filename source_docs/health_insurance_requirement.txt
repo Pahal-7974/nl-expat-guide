@@ -1,0 +1,11 @@
+TITLE: Mandatory Dutch Health Insurance - Deadline and Basic Requirements
+SOURCE_URL: https://www.government.nl/topics/health-insurance/question-and-answer/when-do-i-need-to-take-out-health-insurance-if-i-come-to-live-in-the-netherlands
+SOURCE_URL_2: https://www.iamexpat.nl/expat-info/health-insurance-netherlands
+
+Anyone who comes to live or work in the Netherlands is legally required to take out Dutch basic health insurance (basisverzekering) as soon as practical, and no later than four months after arrival - this applies even to someone who already holds a valid policy from another country, since a foreign policy does not satisfy the Dutch legal requirement on its own. The obligation applies equally to Dutch nationals and expats, EU/EEA/Swiss citizens and non-EU nationals alike, though the trigger date differs slightly: for non-EU nationals the four-month clock starts from when their residence permit takes effect, while EU/EEA/Swiss nationals working in the Netherlands count from when they register at their municipality.
+
+Before applying for Dutch health insurance, two things need to already be in place: a BSN (obtained through municipal registration) and, for non-EU nationals, a valid residence permit or at least a confirmed application in progress - insurers will not accept an application while a permit decision is still pending. Once enrolled, the policy is backdated to the date of registration or the date the permit took effect, meaning any gap is paid retroactively as a lump sum rather than being free.
+
+The basic package (covering GP visits, hospital treatment, and prescribed medication) is standardised by the government - insurers must accept every applicant and the core coverage is identical, so competition between insurers happens on price and supplementary add-ons (dental, physiotherapy) rather than on basic coverage itself. Every adult in a household needs their own individual policy; one policy does not cover multiple family members.
+
+Missing the four-month deadline is enforced by the CAK (a government body): a formal notice is sent, and unpaid premiums plus a fine become due, with the fine escalating on further delay. If the situation isn't resolved after several months, the CAK can automatically enrol the person in a basic plan and deduct premiums directly from their salary.
