@@ -35,7 +35,7 @@ Cloud for hosting.
 
 ```bash
 pip install -r requirements.txt
-export GROQ_API_KEY=your_free_key   # https://console.groq.com
+export GROQ_API_KEY=your_free_key (placeholder)   # https://console.groq.com
 python src/ingest.py                # builds the FAISS index from source_docs/
 streamlit run src/app.py
 ```
