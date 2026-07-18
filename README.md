@@ -46,35 +46,17 @@ and generation as separate, independently-testable steps.
 
 ## Why not scrape the source websites?
 
-For a small, legally-sensitive corpus like this, manually curating ~15-20
-pages was faster than building a compliant scraper, and it sidesteps open
-questions around government site terms of service and the EU database right.
-It also produces a better product: source accuracy and provenance matter more
-here than raw volume, since bad information about immigration has real
-consequences for someone.
+I manually curated 12 pages rather than scraping IND and government websites. For a small, legally-sensitive corpus, that was faster than building an automated scraper. It's also arguably a better product since the source text is specific to immigration content, valuing quality over quantity.
 
 ## Design tradeoffs (and what I'd revisit at scale)
 
-- **Chunk size (350 words, 50-word overlap):** smaller chunks retrieve more
-  precisely but lose surrounding context; larger chunks keep context but
-  dilute relevance scores. This was tuned by eye for explanatory prose, not
-  systematically evaluated — with more time I'd build a small labelled
-  eval set (question → correct source) and grid-search chunk size/overlap
-  against retrieval accuracy.
-- **FAISS `IndexFlatIP` (exact search):** fine up to roughly 100k–1M vectors,
-  after which exact search gets slow. At real scale (the full IND + gemeente
-  site corpus) I'd move to an approximate index (HNSW or IVF) and accept a
-  small recall tradeoff for speed, or move to a managed vector DB if this
-  needed to be a multi-tenant service.
+- **Chunk size (350 words, 50-word overlap):** I converted each source into one vector to embed them. The documents were small enough that they didn't need to be further chunked, and I used these directly to make the vectors. I had 12 vectors with one "chunk” each for 12 documents. Each document has two url sources that get preserved.
+- **FAISS `IndexFlatIP` (exact search):** I'm using FAISS with an exact search index. It checks similarity against every vector directly, which is fine up to roughly 100,000 to a million vectors, and gives perfect recall. This makes my current version easy to scale from 12 to a couple hundred thousand vectors. Beyond that, we'd have to look at other ways to implement the recall.
 - **Local embedding model (MiniLM, 384-dim):** fast and free, but lower
   quality than larger hosted embedding models. Good enough for a focused
   3-topic demo; I'd re-evaluate against a larger model if the corpus grew to
   cover all IND permit types.
-- **Answer-only-from-context prompting:** the main hallucination guardrail.
-  It's not foolproof — the model can still misread a chunk — so a production
-  version would need an evaluation set of known Q&A pairs plus a way to flag
-  low-confidence answers (e.g. low retrieval similarity score) for a "I'm not
-  sure, check the IND directly" response instead of a confident-sounding guess.
+- **Answer-only-from-context prompting:** The main safeguard against wrong answers is the prompt itself. The model is instructed to answer only from retrieved context and say so plainly if it can't. First tests showed that queries asking to ignore instructions could succeed in model deviations, but I fixed that in later versions.
 - **Source freshness:** immigration and tax rules change (the 2026/2027 30%
   ruling rate change is a good example). Right now the corpus is static. At
   scale this needs a re-scraping/re-ingestion schedule, versioning so old
