@@ -49,6 +49,6 @@ if st.button("Ask") and question:
 
 st.divider()
 st.caption(
-    "Currently covers: highly skilled migrant permits, BSN registration, and the 30% ruling. "
-    "Built with Streamlit + sentence-transformers + FAISS + Groq (all free-tier)."
+    "Currently covers: highly skilled migrant permits, BSN registration, 30% ruling, bank accounts and insurance. "
+    "Built with Streamlit + sentence-transformers + FAISS + Groq."
 )
