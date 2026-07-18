@@ -56,13 +56,13 @@ I manually curated 12 pages rather than scraping IND and government websites. Fo
   quality than larger hosted embedding models. Good enough for a focused
   3-topic demo; I'd re-evaluate against a larger model if the corpus grew to
   cover all IND permit types.
-- **Answer-only-from-context prompting:** The main safeguard against wrong answers is the prompt itself. The model is instructed to answer only from retrieved context and say so plainly if it can't. First tests showed that queries asking to ignore instructions could succeed in model deviations, but I fixed that in later versions.
+- **Answer-only-from-context prompting:** The main safeguard against wrong answers is the prompt itself. The model is instructed to answer only from retrieved context and say so plainly if it can't. Initial tests showed that prompts designed to override the instructions could cause the model to deviate from its intended behaviour. However, this issue was addressed and resolved in later versions.
 - **Source freshness:** immigration and tax rules change (the 2026/2027 30%
   ruling rate change is a good example). Right now the corpus is static. At
   scale this needs a re-scraping/re-ingestion schedule, versioning so old
   answers can be distinguished from current ones, and ideally a "last updated"
   timestamp shown to the user per source.
-- **No conversation memory:** each question is answered independently. This
+- **Single-Turn Model** each question is answered independently. This
   keeps the system simple and easy to reason about, at the cost of not
   handling follow-up questions like "what about for my partner?" naturally.
 
