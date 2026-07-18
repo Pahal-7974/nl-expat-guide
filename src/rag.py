@@ -2,8 +2,8 @@
 rag.py
 
 The retrieval-augmented generation pipeline:
-  1. Embed the user's question with the same local model used at ingest time.
-  2. Retrieve the top-k most similar chunks from the FAISS index.
+  1. Embed the user's question with the MiniLM used to embed the 12 source docs.
+  2. Retrieve the top-k (4) most similar chunks from the FAISS index.
   3. Build a prompt that only allows the LLM to answer from those chunks.
   4. Call a free-tier LLM (Groq) to generate the answer.
   5. Return the answer plus the source URLs actually used, and always append
@@ -35,15 +35,13 @@ to confirm anything binding directly with the IND (for residence permits) or the
 Belastingdienst (for tax matters)."""
 
 
-class RagPipeline:
+class RagPipeline: #Runs the entire RAG, and called/imported in app.py
     def __init__(self):
         self.embedder = SentenceTransformer(EMBEDDING_MODEL)
         self.index = faiss.read_index(os.path.join(INDEX_DIR, "faiss.index"))
         with open(os.path.join(INDEX_DIR, "chunks.pkl"), "rb") as f:
             self.chunks = pickle.load(f)
 
-        # Groq's free tier is used for generation - no paid subscription needed.
-        # Get a free key at https://console.groq.com
         api_key = os.environ.get("GROQ_API_KEY")
         self.llm = Groq(api_key=api_key) if api_key else None
 
@@ -77,7 +75,7 @@ class RagPipeline:
         if self.llm is None:
             # Graceful fallback if no API key is set, so the app still runs
             # for a demo without generation - useful when explaining retrieval
-            # separately from generation in an interview.
+            # separately from generation.
             answer_text = (
                 "[No GROQ_API_KEY set - showing retrieved context only]\n\n" + context
             )
