@@ -37,7 +37,7 @@ Cloud for hosting.
 pip install -r requirements.txt
 export GROQ_API_KEY=your_free_key (placeholder)   # https://console.groq.com
 python src/ingest.py                # builds the FAISS index from source_docs/
-streamlit run src/app.py
+streamlit run src/app.py            # provides UI and runs the application
 ```
 
 Without a `GROQ_API_KEY`, the app still runs and shows the raw retrieved
