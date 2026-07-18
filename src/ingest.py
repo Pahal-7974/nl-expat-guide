@@ -22,11 +22,11 @@ from sentence_transformers import SentenceTransformer
 
 SOURCE_DIR = os.path.join(os.path.dirname(__file__), "..", "source_docs")
 INDEX_DIR = os.path.join(os.path.dirname(__file__), "..", "index")
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # small, fast, free, runs locally (no API cost)
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # small, fast, free, runs locally
 
 # Tradeoff: smaller chunks -> more precise retrieval but less surrounding context.
 # Larger chunks -> more context per chunk but retrieval gets noisier (a chunk
-# might only be partially relevant to the query).
+# might only be partially relevant to the query). Currently 1 document -> 1 chunk.
 CHUNK_SIZE_WORDS = 350
 CHUNK_OVERLAP_WORDS = 50
 
@@ -55,7 +55,7 @@ def parse_doc(filepath):
 def chunk_text(text, chunk_size=CHUNK_SIZE_WORDS, overlap=CHUNK_OVERLAP_WORDS):
     """Simple word-count based sliding-window chunker."""
     words = text.split()
-    if len(words) <= chunk_size:
+    if len(words) <= chunk_size: # Current code returns here, but below loop is for potential future use with bigger documents and provides scalability.
         return [text]
 
     chunks = []
@@ -73,14 +73,14 @@ def build_index():
     if not os.path.isdir(SOURCE_DIR):
         raise FileNotFoundError(f"No source_docs directory at {SOURCE_DIR}")
 
-    os.makedirs(INDEX_DIR, exist_ok=True)
+    os.makedirs(INDEX_DIR, exist_ok=True) # exist_ok prevents runtime fs crash
 
     print(f"Loading embedding model ({EMBEDDING_MODEL})...")
     model = SentenceTransformer(EMBEDDING_MODEL)
 
     all_chunks = []  # list of dicts: {text, title, source_url, source_url_2}
 
-    filenames = sorted(f for f in os.listdir(SOURCE_DIR) if f.endswith(".txt"))
+    filenames = f for f in os.listdir(SOURCE_DIR) if f.endswith(".txt")
     print(f"Found {len(filenames)} source documents.")
 
     for filename in filenames:
@@ -103,12 +103,11 @@ def build_index():
     texts = [c["text"] for c in all_chunks]
     embeddings = model.encode(texts, show_progress_bar=True, convert_to_numpy=True)
 
-    # Normalise so that inner product == cosine similarity (cheap trick,
-    # avoids needing a separate cosine-similarity index type).
+    # Normalise so that inner product == cosine similarity.
     faiss.normalize_L2(embeddings)
 
     dim = embeddings.shape[1]
-    index = faiss.IndexFlatIP(dim)  # exact search; fine up to ~100k-1M vectors.
+    index = faiss.IndexFlatIP(dim)  # exact search; fine for upto ~1M vectors.
     index.add(embeddings)
 
     faiss.write_index(index, os.path.join(INDEX_DIR, "faiss.index"))
