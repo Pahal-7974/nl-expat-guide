@@ -47,7 +47,7 @@ class RagPipeline: #Runs the entire RAG, and called/imported in app.py
 
     def retrieve(self, query, k=TOP_K):
         query_vec = self.embedder.encode([query], convert_to_numpy=True)
-        faiss.normalize_L2(query_vec)
+        faiss.normalize_L2(query_vec) # Normalised for cosine similarity and to match the source docs index.
         scores, indices = self.index.search(query_vec, k)
 
         results = []
