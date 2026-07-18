@@ -10,7 +10,7 @@ if not os.path.exists(INDEX_PATH):
       from ingest import build_index
       build_index()
 
-st.title("🇳🇱 NL Expat Guide")
+st.title("NL Expat Guide")
 st.caption(
     "Ask a question about immigrating to or settling in the Netherlands. "
     "Answers are grounded in a small curated set of official and reputable sources, "
@@ -22,13 +22,7 @@ st.warning(
     "always confirm with the IND (immigration) or the Belastingdienst (tax)."
 )
 
-
-@st.cache_resource
-def load_pipeline():
-    return RagPipeline()
-
-
-pipeline = load_pipeline()
+pipeline = RagPipeline()
 
 question = st.text_input(
     "Your question",
