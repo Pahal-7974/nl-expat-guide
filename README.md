@@ -1,4 +1,4 @@
-# NL Expat Guide 🇳🇱
+# NL Expat Guide
 
 A retrieval-augmented Q&A assistant for common Netherlands immigration questions
 (highly skilled migrant permits, BSN registration, the 30% ruling). It answers
@@ -12,7 +12,7 @@ can make that information easier to navigate — without pretending to replace
 official guidance.
 
 ## How it works
-<img width="773" height="755" alt="image" src="https://github.com/user-attachments/assets/53daa194-354e-415c-9c09-3fb179dc63d2" />
+<img width="831" height="800" alt="image" src="https://github.com/user-attachments/assets/c781e192-1062-4490-81a1-99e891935a35" />
 
 1. **Source curation** (`source_docs/`): a small set of manually written,
    paraphrased summaries of official/reputable pages (IND, business.gov.nl,
